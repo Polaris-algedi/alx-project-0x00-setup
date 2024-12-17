@@ -6,12 +6,10 @@ import Pill from "./Pill";
 
 const Card: React.FC = () => {
   return (
-    <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
+    <div className="cursor-pointer hover:shadow-md hover:rounded-lg mt-4">
       <Image
-        className="rounded-lg"
+        className="rounded-lg w-full"
         src={HOUSE_IMAGE}
-        width={378.56}
-        height={299.37}
         alt="house image"
       />
       <div className="p-2 flex gap-2 mt-2">
@@ -29,7 +27,7 @@ const Card: React.FC = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
+          <Image className="w-10" src={STAR_IMAGE} alt="star" />
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>
       </div>
